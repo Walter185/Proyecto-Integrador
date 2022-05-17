@@ -20,6 +20,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import { fromEventPattern } from 'rxjs';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 
@@ -32,7 +33,8 @@ import { fromEventPattern } from 'rxjs';
     HeaderComponent,
     FooterComponent,
     ProjectsComponent,
-    SkillsComponent,    
+    SkillsComponent,
+    ProfileComponent,    
   ],
   imports: [
     BrowserModule,
