@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { fromEventPattern } from 'rxjs';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -36,7 +37,8 @@ import { RegisterComponent } from './components/register/register.component';
     ProjectsComponent,
     SkillsComponent,
     ProfileComponent,
-    RegisterComponent,    
+    RegisterComponent,
+    LoginComponent,    
   ],
   imports: [
     BrowserModule,
