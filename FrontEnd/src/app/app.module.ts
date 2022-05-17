@@ -8,6 +8,10 @@ import { EduExpComponent } from './components/edu-exp/edu-exp.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PortfolioService } from './services/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -17,13 +21,17 @@ import { HttpClientModule } from '@angular/common/http';
     AboutmeComponent,
     AppComponent,
     EduExpComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    ProjectsComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
 
   providers: [],
