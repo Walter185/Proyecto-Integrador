@@ -7,11 +7,19 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { EduExpComponent } from './components/edu-exp/edu-exp.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PortfolioService } from './services/portfolio.service';
-import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import { SkillsComponent } from './components/skills/skills.component';
+import { CommonModule } from '@angular/common'; 
+import { FormsModule } from '@angular/forms'; 
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { Routes, RouterModule } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { ReactiveFormsModule } from '@angular/forms';
+import { fromEventPattern } from 'rxjs';
 
 
 
@@ -23,15 +31,19 @@ import { MatCardModule } from '@angular/material/card';
     EduExpComponent,
     HeaderComponent,
     FooterComponent,
-    ProjectsComponent
-    
+    ProjectsComponent,
+    SkillsComponent,    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressBarModule,
+    FormsModule,
+    CommonModule,
+    ReactiveFormsModule,
   ],
 
   providers: [],
