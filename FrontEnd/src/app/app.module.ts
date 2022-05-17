@@ -21,6 +21,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import { fromEventPattern } from 'rxjs';
 import { ProfileComponent } from './components/profile/profile.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 
@@ -34,7 +35,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     FooterComponent,
     ProjectsComponent,
     SkillsComponent,
-    ProfileComponent,    
+    ProfileComponent,
+    RegisterComponent,    
   ],
   imports: [
     BrowserModule,
