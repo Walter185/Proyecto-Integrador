@@ -23,6 +23,8 @@ import { fromEventPattern } from 'rxjs';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { BoardAdminComponent } from './components/board-admin/board-admin.component';
+import { BoardUserComponent } from './components/board-user/board-user.component';
 
 
 
@@ -38,7 +40,9 @@ import { LoginComponent } from './components/login/login.component';
     SkillsComponent,
     ProfileComponent,
     RegisterComponent,
-    LoginComponent,    
+    LoginComponent,
+    BoardAdminComponent,
+    BoardUserComponent,    
   ],
   imports: [
     BrowserModule,
