@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -14,7 +15,12 @@ import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 
+
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
+
 
 @NgModule({
   declarations: [
@@ -23,9 +29,14 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     RegisterComponent,
     HomeComponent,
     ProfileComponent,
+    AboutmeComponent,
     BoardAdminComponent,
     BoardModeratorComponent,
-    BoardUserComponent
+    BoardUserComponent,
+    PortfolioComponent,
+    NavbarComponent,
+
+
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/services/portfolio.service';
+import { PortfolioService } from 'src/app/_services/portfolio.service';
 
 
 @Component({
@@ -10,12 +10,10 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 export class NavbarComponent implements OnInit {
   myPortfolio:any;
 
-  constructor(private portfolioService:PortfolioService ) { }
+  constructor( ) { }
 
   ngOnInit(): void {
-    this.portfolioService.getData().subscribe(data => {
-      this.myPortfolio=data;
-    });
+   
   }
 
 }
