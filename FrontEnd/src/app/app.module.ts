@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { EduExpComponent } from './components/edu-exp/edu-exp.component';
 
 
 
@@ -12,6 +13,7 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
     NavbarComponent,
     AboutmeComponent,
     AppComponent,
+    EduExpComponent,
   ],
   imports: [
     BrowserModule,
