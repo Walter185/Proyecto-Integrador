@@ -25,7 +25,9 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { BoardAdminComponent } from './components/board-admin/board-admin.component';
 import { BoardUserComponent } from './components/board-user/board-user.component';
-import { ModeratorComponent } from './components/moderator/moderator.component';
+import { BoardModeratorComponent } from './components/board-moderator/board-moderator.component';
+import { Component } from '@angular/core';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -44,7 +46,9 @@ import { ModeratorComponent } from './components/moderator/moderator.component';
     LoginComponent,
     BoardAdminComponent,
     BoardUserComponent,
-    ModeratorComponent,    
+    BoardModeratorComponent,
+    Component,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

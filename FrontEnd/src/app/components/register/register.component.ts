@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
+import { NgModule } from '@angular/core';
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -30,5 +32,4 @@ export class RegisterComponent implements OnInit {
       }
     );
   }
-
 }
