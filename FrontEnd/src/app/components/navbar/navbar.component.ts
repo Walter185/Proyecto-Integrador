@@ -9,9 +9,10 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor( ) { }
+  constructor(private portfolioService:PortfolioService ) { }
 
   ngOnInit(): void {
+    this.portfolioService.getData();
   }
 
 }

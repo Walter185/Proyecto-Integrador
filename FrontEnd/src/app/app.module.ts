@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { EduExpComponent } from './components/edu-exp/edu-exp.component';
+import { HeaderComponent } from './components/header/header.component';
+import { PortfolioService } from './services/portfolio.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -14,12 +17,17 @@ import { EduExpComponent } from './components/edu-exp/edu-exp.component';
     AboutmeComponent,
     AppComponent,
     EduExpComponent,
+    HeaderComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
