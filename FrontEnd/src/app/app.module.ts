@@ -1,53 +1,39 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { AboutmeComponent } from './components/aboutme/aboutme.component';
-import { EduExpComponent } from './components/edu-exp/edu-exp.component';
-import { HeaderComponent } from './components/header/header.component';
-import { PortfolioService } from './services/portfolio.service';
-import { FooterComponent } from './components/footer/footer.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from '@angular/material/card';
-import { SkillsComponent } from './components/skills/skills.component';
-import { CommonModule } from '@angular/common'; 
-import { FormsModule } from '@angular/forms'; 
-import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { Routes, RouterModule } from '@angular/router';
-import { MatButtonModule } from '@angular/material/button';
-import { ReactiveFormsModule } from '@angular/forms';
-import { fromEventPattern } from 'rxjs';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
+import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
+import { BoardUserComponent } from './board-user/board-user.component';
 
-
+import { authInterceptorProviders } from './_helpers/auth.interceptor';
 
 @NgModule({
   declarations: [
-    NavbarComponent,
-    AboutmeComponent,
     AppComponent,
-    EduExpComponent,
-    HeaderComponent,
-    FooterComponent,
-    ProjectsComponent,
-    SkillsComponent,    
+    LoginComponent,
+    RegisterComponent,
+    HomeComponent,
+    ProfileComponent,
+    BoardAdminComponent,
+    BoardModeratorComponent,
+    BoardUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatProgressBarModule,
     FormsModule,
-    CommonModule,
-    ReactiveFormsModule,
+    HttpClientModule
   ],
-
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
-
 export class AppModule { }
