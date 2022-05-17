@@ -25,6 +25,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { BoardAdminComponent } from './components/board-admin/board-admin.component';
 import { BoardUserComponent } from './components/board-user/board-user.component';
+import { ModeratorComponent } from './components/moderator/moderator.component';
 
 
 
@@ -42,7 +43,8 @@ import { BoardUserComponent } from './components/board-user/board-user.component
     RegisterComponent,
     LoginComponent,
     BoardAdminComponent,
-    BoardUserComponent,    
+    BoardUserComponent,
+    ModeratorComponent,    
   ],
   imports: [
     BrowserModule,
