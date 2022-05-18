@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from 'src/app/_services/portfolio.service';
 
 @Component({
   selector: 'app-footer',

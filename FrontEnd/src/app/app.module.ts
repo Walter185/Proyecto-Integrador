@@ -1,11 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 
+import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -14,12 +13,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { BoardUserComponent } from './board-user/board-user.component';
-
-
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
-
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
+
 
 
 @NgModule({
@@ -36,7 +33,6 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
     PortfolioComponent,
     NavbarComponent,
 
-
   ],
   imports: [
     BrowserModule,
@@ -44,7 +40,9 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
     FormsModule,
     HttpClientModule
   ],
+
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/_services/portfolio.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,14 +7,13 @@ import { PortfolioService } from 'src/app/_services/portfolio.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  myPortfolio:any;
 
+  myPortfolio: any;
   constructor(private portfolioService:PortfolioService) { }
 
   ngOnInit(): void {
-    this.portfolioService.getData().subscribe(data => {
+    this.portfolioService.getData().subscribe(data=> {
       this.myPortfolio=data;
     });
   }
-
 }
