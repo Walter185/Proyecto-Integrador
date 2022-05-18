@@ -18,6 +18,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeadComponent } from './components/head/head.component';
+import { EducexpComponent } from './components/educexp/educexp.component';
 
 
 
@@ -36,6 +37,7 @@ import { HeadComponent } from './components/head/head.component';
     NavbarComponent,
     FooterComponent,
     HeadComponent,
+    EducexpComponent,
 
 
   ],
