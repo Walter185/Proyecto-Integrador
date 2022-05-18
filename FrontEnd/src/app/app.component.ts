@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TokenStorageService } from './_services/token-storage.service';
-import { NavbarComponent } from './components/navbar/navbar.component';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
