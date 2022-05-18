@@ -19,8 +19,8 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeadComponent } from './components/head/head.component';
 import { EducexpComponent } from './components/educexp/educexp.component';
-import { ProjectComponent } from './components/project/project.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProjComponent } from './components/proj/proj.component';
 
 
 
@@ -40,7 +40,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     HeadComponent,
     EducexpComponent,
-    ProjectComponent,
+    ProjComponent,
 
 
   ],
