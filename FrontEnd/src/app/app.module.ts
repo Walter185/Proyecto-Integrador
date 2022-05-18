@@ -23,7 +23,11 @@ import { fromEventPattern } from 'rxjs';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-
+import { ProjectComponent } from './components/project/project.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { CommonModule } from '@angular/common';
+import { MatProgressBar, MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressBarLocation } from '@angular/material/progress-bar';
 
 
 
@@ -42,6 +46,9 @@ import { MatIconModule } from '@angular/material/icon';
     FooterComponent,
     HeadComponent,
     EducexpComponent,
+    ProjectComponent,
+    SkillsComponent,
+
 
 
   ],
@@ -56,6 +63,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+    CommonModule,
+    MatProgressBarModule,
+
 
   ],
 
