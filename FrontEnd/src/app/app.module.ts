@@ -16,6 +16,8 @@ import { BoardUserComponent } from './board-user/board-user.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeadComponent } from './components/head/head.component';
 
 
 
@@ -32,6 +34,9 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
     BoardUserComponent,
     PortfolioComponent,
     NavbarComponent,
+    FooterComponent,
+    HeadComponent,
+
 
   ],
   imports: [
