@@ -1,5 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
@@ -19,7 +18,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeadComponent } from './components/head/head.component';
 import { EducexpComponent } from './components/educexp/educexp.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProjComponent } from './components/proj/proj.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { fromEventPattern } from 'rxjs';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 
 
 
@@ -38,7 +42,6 @@ import { ProjComponent } from './components/proj/proj.component';
     FooterComponent,
     HeadComponent,
     EducexpComponent,
-    ProjComponent,
 
 
   ],
@@ -47,7 +50,13 @@ import { ProjComponent } from './components/proj/proj.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule,
+
   ],
 
   providers: [authInterceptorProviders],
