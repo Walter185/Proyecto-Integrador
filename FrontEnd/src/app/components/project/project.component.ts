@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/services/portfolio.service';
-import { MatCardModule } from '@angular/material/card';
+import { PortfolioService } from 'src/app/_services/portfolio.service';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  selector: 'app-project',
+  templateUrl: './project.component.html',
+  styleUrls: ['./project.component.css']
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectComponent implements OnInit {
 
   myPortfolio: any;
   projectList: any;
