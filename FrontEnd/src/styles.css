@@ -184,22 +184,21 @@
   
   #experience {
     padding: 2.5rem;
+    margin: 30px;
   }
   
-  
-  .education {
-    flex: 0 0 50%;
-    max-width: 50%;
+  #education {
+    padding: 2.5rem;
+    margin: 30px;
   }
+  
+ 
   .logo-image {
     display: flex;
     width: 150px
   }
   
-  .experience {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
+ 
   
   .timeline-box {
     flex: 0 0 100%;
@@ -440,3 +439,5 @@
   html, body { height: 100%; }
   body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

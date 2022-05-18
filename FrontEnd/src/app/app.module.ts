@@ -19,6 +19,8 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeadComponent } from './components/head/head.component';
 import { EducexpComponent } from './components/educexp/educexp.component';
+import { ProjectComponent } from './components/project/project.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -38,6 +40,7 @@ import { EducexpComponent } from './components/educexp/educexp.component';
     FooterComponent,
     HeadComponent,
     EducexpComponent,
+    ProjectComponent,
 
 
   ],
@@ -45,7 +48,8 @@ import { EducexpComponent } from './components/educexp/educexp.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
 
   providers: [authInterceptorProviders],
